@@ -286,11 +286,11 @@ void buy()
 					goto a;
 
 				}
-				products[c] = cur->proName;   // this will conatin the items buy names in array; 
+				products[c] = cur->proName;   // lưu tên người dùng trong mảng
 				c++;
 
-				pay = pay + (cur->prePrice * quant);         //     calculate Bill
-				cur->quantity = cur->quantity - quant;           //    change quantity
+				pay = pay + (cur->prePrice * quant);         //     tính tiền hóa đơn
+				cur->quantity = cur->quantity - quant;           //    cập nhật số lượng sản phẩm
 				i++;
 
 			}
@@ -307,10 +307,10 @@ void buy()
 		system("cls");
 		cout << "\n\n\n\n\t\t\tYou have bought : ";
 		for (int i = 0; i < no; i++)
-		{              //    show that item you have bought
+		{              //   hiển thị các sản phẩm đã mua
 			cout << products[i] << ",";
 		}
-		price = pay * (0.90);           //    with 5% discount
+		price = pay * (0.90); 
 		cout << "\n\nOriginal price : " << pay;
 		cout << "\n with 10% discount: " << price << "\nThank you! for the shopping\n\n";
 
