@@ -9,7 +9,7 @@ using namespace std;
 
 int search(int);
 int display();
-string check(int);       //   for checking quantity
+
 
 ////////////////////////////////////////////////////////////////////
 struct node
@@ -247,8 +247,8 @@ void buy()
 {
 	system("cls");    // gọi hàm hiển thị
 	display();
-	string products[20];
-	//   for display sold items
+	string products[20];// mảng lưu tên khách hàng
+	
 	int pay = 0, no, c = 0, price, id, i = 1;
 
 	if (head == NULL)          // kiểm tra linked list 
