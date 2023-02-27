@@ -178,7 +178,7 @@ void modify()
 		{
 			while (cur->ID != id)       // khi id của cur chưa bằng id cần xóa 
 			{
-				cur = cur->next;       // cur đi tiếp
+				cur = cur->next;       // cur đi tới node tiếp theo
 			}
 			                         // khi tìm được 
 			cout << "\nOld ID : " << cur->ID << endl;
@@ -220,7 +220,7 @@ int display()
 	cout << "=================================================================|\n";
 	while (p != NULL)  // xâu ra toàn bộ giá trị trong node
 	{
-		cout << p->ID << "\t\t" << p->proName << "\t\t\t" << p->prePrice << "\t\t\t" << check(p->quantity) << "\n"; //    call   check func and pass quantity
+		cout << p->ID << "\t\t" << p->proName << "\t\t\t" << p->prePrice << "\t\t\t" << p->quantity << "\n";
 		p = p->next;  // đi tới node tiếp theo
 		c = c + 1;
 	}
