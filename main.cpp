@@ -228,19 +228,9 @@ int display()
 	return c;
 }
 ////////////////////////////////////////////////////////////////////////////////////////
-string check(int quant)
 
-{              //        check function
-	int a = quant;
-	stringstream ss;
-	ss << a;
-	string quantity = ss.str();
 
-	if (quant <= 0)
-		return "out of stock!";
-	else
-		return quantity;
-}
+
 
 ///////////////////////////////////////////////////////////////////////
 /*
