@@ -1,0 +1,29 @@
+chương trình bán hàng bằng C++  
+     + Người bán hàng :      
+                       + Quản lý sản phẩm (thêm , xóa ,sửa sản phẩm ,xem danh sách khách hàng )
+            
+     + Người mua hàng : 
+                       + Mua sản phẩm , xem bill .  
+
+
+
+
++ người bán hàng :  sản phẩm (link list ) (stack)  (lưu trữ vì linh động tạo thêm , xóa , sửa sản phẩm khi chương trình chạy)
+   linked list tốt hơn khi sử mảng  : Vì trong chương trình  thêm , xóa  , tìm kiểm là sử dụng nhiều nhất 
+                           
+                                                                                 
+                                                             Linked list                                                                Mảng 
+  Beg (thêm sản phẩm )                                   thêm    hơn             
+  delpo xóa sản phẩm                                     xóa     hơn 
+  search(id sản phẩm){                                   tìm kiếm                                                                      hơn                       
+   } => vị trí của sản phẩm 
+   display(id sản phẩm){                                 hiển thị                               như nhau
+ } => show danh sách   sản phẩm  và số lượng sản phẩm 
+  modify (id sản phâmr){                                 sửa                                    như nhau 
+} sửa sản phẩm  dựa trên id 
+  
+
+ Giỏ hàng : (stack) lấy giỏ hàng ra    stack ()
+
+
++ Khách hàng : xuất toàn bộ khách hàng  ,xóa hàng cũ nhất ,thêm khách hàng  (linked list)(queue)
